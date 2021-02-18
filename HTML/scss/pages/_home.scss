@@ -6,18 +6,16 @@
         border-radius: 12px;
         background-color: #E6E6E6;
         overflow: hidden;
-        transition: background-color 0.8s ease;
-
+        transition: all 0.6s ease;
         &:hover {
             background-color: $primary-color;
             border: 1px solid $primary-color;
-
+            transform: scale(1.1);
+            box-shadow: 0 1px 5px #00000078;
             figure {
                 border: 1px solid $primary-color;
-
                 img {
-                    animation: rotateYLogo 1s 1 cubic-bezier(.03,.21,.67,.97); 
-                    transition: transform 1.5s; 
+                    animation: rotateYLogo 0.9s 1 cubic-bezier(.03,.21,.67,.97); 
                 }
             }
 
@@ -41,11 +39,11 @@
             display: flex;
             align-items: center;
             border: 1px solid transparent;
-            transition: all 0.8s ease;
             
             img {
                 max-width: 86%;
                 margin: 0 auto;
+                transition: all; 
             }
         }
 
@@ -1112,7 +1110,7 @@
 
 @keyframes rotateYLogo { 
     0% {transform:  translateZ(0) rotateY(0) scale(1);}
-    50% {transform:  translateZ(150px) rotateY(190deg) scale(0.75);}
+    50% {transform:  translateZ(150px) rotateY(190deg) scale(0.70);}
     80% {transform:  translateZ(0) rotateY(360deg) scale(1);}
     100% {transform:  translateZ(0) rotateY(360deg) scale(1);}
 }
