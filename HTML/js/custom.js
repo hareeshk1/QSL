@@ -105,6 +105,51 @@
     dots: true
   });
 
+  $(".slick-class-04").slick({
+    slidesToShow: 12,
+    slidesToScroll: 3,
+    infinite: true,
+    arrows: false,
+    dots: false,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    responsive: [{  
+      breakpoint: 1640,
+      settings: {
+        slidesToShow: 10,
+        dots: true,
+      }
+    },{  
+      breakpoint: 1360,
+      settings: {
+        slidesToShow: 8,
+      }
+    },{  
+      breakpoint: 1090,
+      settings: {
+        slidesToShow: 6,
+      }
+    },{  
+      breakpoint: 830,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2,
+      }
+    },{  
+      breakpoint: 580,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+      }
+    },{
+      breakpoint: 460,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      }
+    }]
+  });
+
   $(".slick-class-2").slick({ 
 		dots: true,
 		arrows: true,
