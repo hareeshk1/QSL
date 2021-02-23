@@ -1804,7 +1804,7 @@ h2, .h2 {
   border: 1px solid #9B0448;
 }
 .home__clublist:hover figure img {
-  animation: rotateYLogo 0.9s 1 cubic-bezier(0.03, 0.21, 0.67, 0.97);
+  animation: rotateYLogo 0.8s 1 cubic-bezier(0.03, 0.21, 0.67, 0.97);
 }
 .home__clublist:hover span {
   font-weight: 500;
@@ -1824,6 +1824,7 @@ h2, .h2 {
   display: flex;
   align-items: center;
   border: 1px solid transparent;
+  transition: all 0.8s ease;
 }
 @media (max-width: 460px) {
   .home__clublist figure {
@@ -1932,7 +1933,7 @@ h2, .h2 {
   opacity: 1;
 }
 .home__news__item:hover figure img {
-  transform: rotate(-1deg) scale(1.02);
+  transform: rotate(-1deg) scale(1.15);
   filter: grayscale(0%);
 }
 .home__news__item:hover .home__news__item__type {
@@ -1962,7 +1963,7 @@ h2, .h2 {
   top: 0;
   overflow: hidden;
   text-indent: -9999px;
-  transition: all 0.8s ease;
+  transition: all 0.4s ease;
 }
 .home__news__item figure::before {
   content: "";
@@ -1980,7 +1981,7 @@ h2, .h2 {
 }
 .home__news__item figure img {
   filter: grayscale(30%);
-  transition: all 0.8s ease;
+  transition: all 0.4s ease;
   width: 100%;
 }
 @media (max-width: 1199px) {
@@ -3264,7 +3265,10 @@ h2, .h2 {
   }
 }
 .match__box:hover .match__box__team figure img {
-  animation: rotateYLogo 1s 1 cubic-bezier(0.03, 0.21, 0.67, 0.97);
+  animation: rotateYLogo 0.8s 1 cubic-bezier(0.03, 0.21, 0.67, 0.97);
+}
+.match__box:hover .match__box__team + span + .match__box__team figure img {
+  animation-delay: 0.25s;
 }
 
 .projects-holder {

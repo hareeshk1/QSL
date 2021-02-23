@@ -20,7 +20,7 @@
             figure {
                 border: 1px solid $primary-color;
                 img {
-                    animation: rotateYLogo 0.9s 1 cubic-bezier(.03,.21,.67,.97); 
+                    animation: rotateYLogo 0.8s 1 cubic-bezier(.03,.21,.67,.97); 
                 }
             }
 
@@ -170,7 +170,7 @@
                     }  
                     
                     img {
-                        transform:rotate(-1deg) scale(1.02);
+                        transform:rotate(-1deg) scale(1.15);
                         filter: grayscale(0%);
                     }
                 }
@@ -209,7 +209,7 @@
                     top: 0;
                     overflow: hidden;
                     text-indent: -9999px;
-                    transition: all 0.8s ease;
+                    transition: all 0.4s ease;
                 }
 
                 &::before {
@@ -229,7 +229,7 @@
 
                 img {
                     filter: grayscale(30%);
-                    transition: all 0.8s ease;
+                    transition: all 0.4s ease;
                     width: 100%;
 
                     @media (max-width: 1199px) {
